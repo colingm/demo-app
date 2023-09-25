@@ -249,7 +249,9 @@
 			<script src="assets/js/main.js"></script>
 			<script src="//fast.appcues.com/86970.js"></script>
 			<script>
-				Appcues.page();
+				window.AppcuesSettings = {
+			        	enableURLDetection: true
+			        };
 				window.Appcues.identify(
 					  "colin+test@maxfield.dev", // unique, required
 					  {
